@@ -1,7 +1,7 @@
 # ZNAdvertiseView
 ios App启动加载广告页
 
-##![image](https://github.com/wownbafifa/ZNAdvertiseView/blob/master/screen1.gif)
+##![image](http://ww4.sinaimg.cn/large/006tNbRwgw1f6pwuewxl6g30b80k0npd.gif)
 
 1.广告页加载思路。广告页的内容要实时显示，在无网络状态或者网速缓慢的情况下不能延迟加载，或者等到首页出现了再加载广告页。所以这里我不采用网络请求广告接口获取图片地址，然后加载图片的方式，而是先将图片异步下载到本地，并保存图片名，每次打开app时先根据本地存储的图片名查找沙盒中是否存在该图片，如果存在，则显示广告页。
 
